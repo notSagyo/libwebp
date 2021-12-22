@@ -6,7 +6,7 @@ input_path = "./img-input"
 output_path = "./img-output"
 
 # quality of produced .webp images [0-100]
-quality = input("Quality (default 80): ")
+quality = input("Quality (default 80): ") or "80"
 
 if int(quality) < 0 or int(quality) > 100:
     print("image quality out of range[0-100]")
